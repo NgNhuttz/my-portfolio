@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio cá nhân của Nguyễn Long Nhựt, học sinh lớp 12A1 yêu thích thể thao và game online."
+    />
+    <title>nguyenlongnhut | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Điều hướng chính">
+        <a class="brand" href="#home" aria-label="Trang chủ">nguyenlongnhut<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Mở menu</span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">Giới thiệu</a>
+          <a href="#interests">Sở thích</a>
+          <a class="nav-contact" href="#contact">Liên hệ <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Học sinh lớp 12A1</p>
+          <h1>Xin chào, mình là<br /><span>Nhựt.</span></h1>
+          <p class="hero-description">
+            Mình là <strong>Nguyễn Long Nhựt</strong>, người hướng nội, thích đá bóng,
+            thể thao và chơi game online.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#interests">Sở thích của mình <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#contact">Liên hệ với mình <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta">
+            <span>Học sinh · Lớp 12A1</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Minh họa sáng tạo" role="img">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-star">✳</div>
+          <div class="art-card">
+            <span class="art-card-label">Sở thích của Nhựt</span>
+            <span class="art-card-icon">⚽</span>
+            <span class="art-card-caption">thể thao &amp;<br />game online</span>
+          </div>
+          <span class="art-spark spark-one">✦</span>
+          <span class="art-spark spark-two">✳</span>
+          <span class="art-caption">Hướng nội, thích khám phá.</span>
+        </div>
+        <a class="scroll-hint" href="#about"><span></span> Cuộn để khám phá</a>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about-grid">
+          <div>
+            <p class="section-kicker">01 / VỀ MÌNH</p>
+            <h2>Một chút về<br /><span>Nhựt.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              Mình là Nguyễn Long Nhựt, hiện đang học lớp 12A1. Mình khá hướng nội và
+              thích dành thời gian cho những điều mình yêu thích.
+            </p>
+            <p>
+              Ngoài giờ học, mình thích đá bóng, chơi thể thao và giải trí bằng game
+              online. Đây là góc nhỏ để mọi người biết thêm về mình.
+            </p>
+            <div class="skills">
+              <span>Đá bóng</span><span>Thể thao</span><span>Game online</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section container" id="interests">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">02 / SỞ THÍCH</p>
+            <h2>Một vài khoảnh khắc <span>của mình.</span></h2>
+          </div>
+          <p class="section-note">Ảnh mình chia sẻ về bản thân và những buổi đá bóng.</p>
+        </div>
+        <div class="photo-gallery">
+          <figure class="photo-card">
+            <img src="images/nhut-childhood.png" alt="Ảnh Nhựt hồi nhỏ" loading="lazy" />
+            <figcaption>Ảnh hồi nhỏ</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="images/football-evening-1.png" alt="Nhựt ở sân bóng buổi tối" loading="lazy" />
+            <figcaption>Một buổi tối ở sân bóng</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="images/football-evening-2.png" alt="Sân bóng trong buổi đá bóng cùng bạn" loading="lazy" />
+            <figcaption>Trên sân cùng bạn bè</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="images/football-evening-3.png" alt="Giày đá bóng sau trận đấu" loading="lazy" />
+            <figcaption>Sau trận đấu</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container contact-inner">
+          <p class="section-kicker">03 / LIÊN HỆ</p>
+          <h2>Kết nối với<br /><span>mình nhé.</span></h2>
+          <p class="contact-copy">Cảm ơn bạn đã ghé thăm website của mình.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <a class="brand" href="#home">nguyenlongnhut<span>.</span></a>
+      <p>Một góc nhỏ về mình, được làm bằng sự yêu thích.</p>
+      <span>© <span id="current-year"></span> Nguyễn Long Nhựt</span>
+    </footer>
+  </body>
+</html>

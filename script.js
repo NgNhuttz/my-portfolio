@@ -1,0 +1,22 @@
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const currentYear = document.querySelector("#current-year");
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", String(!isOpen));
+    navLinks.classList.toggle("is-open", !isOpen);
+  });
+
+  navLinks.addEventListener("click", (event) => {
+    if (event.target instanceof HTMLAnchorElement) {
+      menuToggle.setAttribute("aria-expanded", "false");
+      navLinks.classList.remove("is-open");
+    }
+  });
+}
+
+if (currentYear) {
+  currentYear.textContent = String(new Date().getFullYear());
+}
